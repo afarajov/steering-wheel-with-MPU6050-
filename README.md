@@ -25,7 +25,7 @@ on/off snap.
 
 - **Reads wheel angle** via an MPU6050 IMU over I2C (custom SDA/SCL pin mapping
   on the ESP32-C3 Super Mini)
-- **Reads pedal input** — [accelerator/brake via buttons — уточни если аналог] 
+- **Reads pedal input** — [accelerator/brake via buttons — analog] 
 - **Streams `ANGLE,ACCEL,BRAKE`** over serial at 115200 baud
 - **Converts angle → pseudo-analog steering** using duty-cycle pulsing, with a
   configurable dead zone, response curve, and full-lock threshold
