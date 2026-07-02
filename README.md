@@ -66,17 +66,11 @@ where my understanding is solid vs. assisted:
   numerical tuning of the response curve constants (`RESPONSE_EXP`, `MIN_DUTY`)
   through iterative testing
 
-## What I'd do differently today
-
-- I'd log duty-cycle output to a file during tuning sessions instead of eyeballing
-  the live terminal readout — would've made comparing presets faster
-- [добавь свой пункт, если есть — например про калибровку MPU6050 или про механическую конструкцию руля]
-
 ## Hardware
 
 - ESP32-C3 Super Mini
 - MPU6050 (accelerometer + gyroscope)
-- [педали/кнопки — что использовал]
+- Two buttons used as acceleration and brakes (brakes -> GPIO4 ; accel -> GPIO3)
 - I2C wiring: SDA → GPIO20, SCL → GPIO10 (remapped from default pins)
 
 ## Running it
